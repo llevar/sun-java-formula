@@ -21,6 +21,6 @@ unpack-jdk-tarball:
     - name: java
     - link: /usr/bin/java
     - path: {{ java.java_real_home }}/bin/java
-    - priority: 30
+    - priority: 2000
 
 {%- endif %}
