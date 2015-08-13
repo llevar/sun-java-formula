@@ -18,7 +18,7 @@ unpack-jdk-tarball:
     - require:
       - file: {{ java.prefix }}
   alternatives.install:
-    - name: java-home-link
+    - name: java
     - link: {{ java.java_home }}
     - path: {{ java.java_real_home }}
     - priority: 30
