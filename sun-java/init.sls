@@ -19,8 +19,8 @@ unpack-jdk-tarball:
       - file: {{ java.prefix }}
   alternatives.install:
     - name: java
-    - link: {{ java.java_home }}
-    - path: {{ java.java_real_home }}
+    - link: /usr/bin/java
+    - path: {{ java.java_real_home }}/bin/java
     - priority: 30
 
 {%- endif %}
