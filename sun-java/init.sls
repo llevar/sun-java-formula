@@ -22,9 +22,8 @@ unpack-jdk-tarball:
     - link: /usr/bin/java
     - path: {{ java.java_real_home }}/bin/java
     - priority: 2000
-  symlink:
-    file.symlink:
-      - name: /usr/lib/java
-      - target: {{ java.java_real_home }}
+  file.symlink:
+    - name: /usr/lib/java
+    - target: {{ java.java_real_home }}
 
 {%- endif %}
